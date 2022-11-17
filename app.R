@@ -145,8 +145,8 @@ server <- function(input, output, session) {
       name %in% "pm" ~ "pollute"
     ),
     temporal = case_when(
-      name %in% c('st_census_tract', 'aadt', 'narr', 'pm') ~ TRUE,
-      name %in% c('census_block_group', 'dep_index', 'roads', 'drivetime', 'greenspace', 'nlcd') ~ FALSE
+      name %in% c('st_census_tract', 'narr', 'pm') ~ TRUE,
+      name %in% c('census_block_group', 'dep_index', 'aadt','roads', 'drivetime', 'greenspace', 'nlcd') ~ FALSE
     )
     )
 
